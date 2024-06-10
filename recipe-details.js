@@ -1,18 +1,18 @@
 import { setNavBar, setSearch } from "./common.js";
-fetch('./data/recipes.json')
-  .then(response => response.json())
-  .then(data => {
-    console.log(data.recipes); 
-  })
-  .catch(error => console.error('Error fetching the recipes:', error));
+
 document.addEventListener("DOMContentLoaded", () => {
-  initializePage();
+  fetch("./data/recipes.json")
+    .then((response) => response.json())
+    .then((data) => {
+      initializePage(data.recipes);
+    })
+    .catch((error) => console.error("Error fetching the recipes:", error));
 });
-function initializePage() {
+function initializePage(recipes) {
   setNavBar();
-  setSearch();
-  createNewRecipeForm();
-  createNewIngredientForm();
+  setSearch(recipes);
+  createNewRecipeForm(recipes);
+  createNewIngredientForm(recipes);
   trackTimeSpent();
   setCookingTimer();
 
@@ -121,7 +121,7 @@ function setPreparationSteps(recipe) {
 }
 
 // Add new Ingredients
-function createNewIngredientForm() {
+function createNewIngredientForm(recipes) {
   const newIngredientForm = document.getElementById("new-ingredient-form");
   if (newIngredientForm) {
     newIngredientForm.addEventListener("submit", (event) => {
@@ -154,7 +154,7 @@ function createNewIngredientForm() {
 }
 
 // Add new recipe
-function createNewRecipeForm() {
+function createNewRecipeForm(recipes) {
   function addNewRecipe(newRecipeData) {
     const newRecipe = {
       id: recipes.length + 1,
