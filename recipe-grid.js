@@ -1,19 +1,17 @@
-import { setNavBar, setSearch } from "./common.js";
-
+import { setNavBar, setSearch, fetchRecipes, storeRecipes } from "./common.js";
+import data from "./data/recipes.json" assert { "type": "json" };
+const initialRecipes = data.recipes;
 document.addEventListener("DOMContentLoaded", () => {
-  initializePage();
-
-  fetch("./data/recipes.json")
-    .then((response) => response.json())
-    .then((data) => {
-      initializePage(data.recipes);
-    })
-    .catch((error) => console.error("Error fetching the recipes:", error));
+  if (localStorage.getItem("recipes") === "undefined") {
+    storeRecipes(initialRecipes);
+  }
+  const recipes = fetchRecipes();
+  initializePage(recipes);
 });
 function initializePage(recipes) {
   setNavBar();
-  setSearch(recipes);
-  setSorting(recipes);
+  setSearch();
+  setSorting();
 
   const filteredRecipesStr = localStorage.getItem("filteredRecipes");
   recipes = recipes || [];
@@ -70,7 +68,7 @@ function sortRecipes(sortOption, recipes) {
   return recipes;
 }
 
-function setSorting(recipes) {
+function setSorting() {
   const sortSelect = document.getElementById("sort-by");
   sortSelect.addEventListener("change", handleSort);
 
@@ -78,16 +76,9 @@ function setSorting(recipes) {
     const sortSelect = document.getElementById("sort-by");
     const selectedOption = sortSelect.value;
 
-    const filteredRecipesStr = localStorage.getItem("filteredRecipes");
-    let filteredRecipes = [];
+    const recipes = fetchRecipes();
 
-    if (filteredRecipesStr) {
-      filteredRecipes = JSON.parse(filteredRecipesStr);
-    } else {
-      filteredRecipes = recipes;
-    }
-
-    const sortedRecipes = sortRecipes(selectedOption, filteredRecipes);
+    const sortedRecipes = sortRecipes(selectedOption, recipes);
     createRecipeGrid(sortedRecipes);
   }
 }
