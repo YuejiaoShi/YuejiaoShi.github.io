@@ -1,42 +1,31 @@
-import { setNavBar, setSearch } from "./common.js";
+import { setNavBar, setSearch, fetchRecipes } from "./common.js";
 
 document.addEventListener("DOMContentLoaded", () => {
+  const recipes = fetchRecipes();
   const hideRecipeParts = document.querySelectorAll(".hide-recipe-part");
   if (hideRecipeParts) {
     hideRecipeParts.forEach((part) => part.classList.add("hide"));
   }
-
-  fetch("./data/recipes.json")
-    .then((unReadableData) => {
-      return unReadableData.json();
-    })
-    .then((data) => initializeApp(data.recipes))
-    .catch((e) => console.log(e));
-
   setNavBar();
+  setSearch();
   createNewRecipeForm();
+  const filteredRecipesStr = localStorage.getItem("filteredRecipes");
+  if (filteredRecipesStr) {
+    const filteredRecipes = JSON.parse(filteredRecipesStr);
+    const recipeId = filteredRecipes[0].id;
 
-  function initializeApp(recipes) {
-    const filteredRecipesStr = localStorage.getItem("filteredRecipes");
-
-    if (filteredRecipesStr) {
-      const filteredRecipes = JSON.parse(filteredRecipesStr);
-      const recipeId = filteredRecipes[0].id;
-
-      if (recipeId) {
-        const recipe = recipes.find((r) => r.id === recipeId);
-        if (recipe) {
-          setRecipe(recipe);
-        } else {
-          console.error("Recipe not found");
-        }
+    if (recipeId) {
+      const recipe = recipes.find((r) => r.id === recipeId);
+      if (recipe) {
+        setRecipe(recipe);
       } else {
-        console.error("No recipe ID found in filtered recipes");
+        console.error("Recipe not found");
       }
     } else {
-      console.error("No filtered recipes found in localStorage");
+      console.error("No recipe ID found in filtered recipes");
     }
-    setSearch(recipes);
+  } else {
+    console.error("No filtered recipes found in localStorage");
   }
 });
 

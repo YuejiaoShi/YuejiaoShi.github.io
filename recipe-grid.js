@@ -1,8 +1,20 @@
 import { setNavBar, setSearch, fetchRecipes, storeRecipes } from "./common.js";
-import data from "./data/recipes.json" assert { "type": "json" };
-const initialRecipes = data.recipes;
-document.addEventListener("DOMContentLoaded", () => {
-  if (localStorage.getItem("recipes") === "undefined") {
+
+async function fetchInitialRecipes() {
+  const response = await fetch(
+    "https://raw.githubusercontent.com/YuejiaoShi/YuejiaoShi.github.io/main/data/recipes.json"
+  );
+  const data = await response.json();
+  return data.recipes;
+}
+
+// import data from "./data/recipes.json" assert { "type": "json" };
+// const initialRecipes = data.recipes;
+
+document.addEventListener("DOMContentLoaded", async () => {
+  const initialRecipes = await fetchInitialRecipes();
+
+  if (localStorage.getItem("recipes") === null) {
     storeRecipes(initialRecipes);
   }
   const recipes = fetchRecipes();
