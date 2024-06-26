@@ -178,7 +178,7 @@
     {
       "id": 7,
       "title": "Italian Margherita Pizza",
-      "picture_url": "https://www.simplyrecipes.com/thmb/J3ub8ghE4xAlYr-14Tk0UXXFHG0=/2000x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Margherita-Pizza-LEAD-5-2048x1365-1805bb8b57b34f9c94d3d7f8ed693ae7.jpg",
+      "picture_url": "https://images.prismic.io/eataly-us/ed3fcec7-7994-426d-a5e4-a24be5a95afd_pizza-recipe-main.jpg",
       "description": "The classic Italian Margherita Pizza features a simple yet delicious combination of fresh tomatoes, mozzarella cheese, and basil on a thin, crispy crust. This pizza embodies the essence of Italian culinary tradition with its fresh ingredients and straightforward preparation.",
       "ingredients": [
         { "NAME": "Pizza dough", "AMOUNT": "1 ball" },
@@ -205,7 +205,7 @@
     {
       "id": 8,
       "title": "Indian Butter Chicken",
-      "picture_url": "https://www.indianhealthyrecipes.com/wp-content/uploads/2020/11/butter-chicken.jpg",
+      "picture_url": "https://easychickenrecipes.com/wp-content/uploads/2019/11/butter-chicken-reshoot-6-of-8-768x1152.jpg",
       "description": "Butter Chicken, or Murgh Makhani, is a popular Indian dish featuring tender chicken pieces in a rich and creamy tomato sauce. It's a perfect blend of spices and flavors, best enjoyed with naan or rice.",
       "ingredients": [
         { "NAME": "Chicken thighs", "AMOUNT": "1 kg, boneless" },
@@ -241,7 +241,7 @@
     {
       "id": 9,
       "title": "Mexican Tacos",
-      "picture_url": "https://www.dinneratthezoo.com/wp-content/uploads/2019/08/ground-beef-tacos-5.jpg",
+      "picture_url": "https://images.immediate.co.uk/production/volatile/sites/30/2022/10/Pork-carnitas-b94893e.jpg",
       "description": "Mexican Tacos are a vibrant and flavorful dish consisting of seasoned meat, fresh vegetables, and various toppings, all wrapped in soft or crispy tortillas. They are versatile and can be customized with your favorite ingredients.",
       "ingredients": [
         { "NAME": "Ground beef", "AMOUNT": "500g" },
@@ -270,7 +270,7 @@
     {
       "id": 10,
       "title": "Greek Moussaka",
-      "picture_url": "https://www.budgetbytes.com/wp-content/uploads/2020/02/Moussaka-plate.jpg",
+      "picture_url": "https://www.196flavors.com/wp-content/uploads/2016/01/moussaka-4.jpg",
       "description": "Greek Moussaka is a hearty casserole made with layers of eggplant, spiced meat, and creamy béchamel sauce. It's a comforting and flavorful dish, perfect for family dinners.",
       "ingredients": [
         { "NAME": "Eggplants", "AMOUNT": "2 large, sliced" },
