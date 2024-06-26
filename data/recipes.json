@@ -174,6 +174,133 @@
       "published": "Jan 5",
       "likes": 90,
       "comments": 45
+    },
+    {
+      "id": 7,
+      "title": "Italian Margherita Pizza",
+      "picture_url": "https://www.simplyrecipes.com/thmb/J3ub8ghE4xAlYr-14Tk0UXXFHG0=/2000x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Margherita-Pizza-LEAD-5-2048x1365-1805bb8b57b34f9c94d3d7f8ed693ae7.jpg",
+      "description": "The classic Italian Margherita Pizza features a simple yet delicious combination of fresh tomatoes, mozzarella cheese, and basil on a thin, crispy crust. This pizza embodies the essence of Italian culinary tradition with its fresh ingredients and straightforward preparation.",
+      "ingredients": [
+        { "NAME": "Pizza dough", "AMOUNT": "1 ball" },
+        { "NAME": "Tomato sauce", "AMOUNT": "1/2 cup" },
+        { "NAME": "Fresh mozzarella", "AMOUNT": "200g, sliced" },
+        { "NAME": "Fresh basil leaves", "AMOUNT": "handful" },
+        { "NAME": "Olive oil", "AMOUNT": "2 tbsp" },
+        { "NAME": "Salt", "AMOUNT": "to taste" }
+      ],
+      "preparationSteps": [
+        "Preheat the oven to 250°C (482°F) with a pizza stone inside if available.",
+        "Roll out the pizza dough on a lightly floured surface to your desired thickness.",
+        "Spread a thin layer of tomato sauce over the dough, leaving a small border around the edges.",
+        "Distribute the sliced mozzarella evenly over the sauce.",
+        "Drizzle with olive oil and sprinkle with salt.",
+        "Bake the pizza in the preheated oven for 10-12 minutes, or until the crust is golden and the cheese is bubbling and slightly browned.",
+        "Remove from the oven and immediately scatter fresh basil leaves over the top.",
+        "Slice and serve hot."
+      ],
+      "published": "Mar 10",
+      "likes": 85,
+      "comments": 25
+    },
+    {
+      "id": 8,
+      "title": "Indian Butter Chicken",
+      "picture_url": "https://www.indianhealthyrecipes.com/wp-content/uploads/2020/11/butter-chicken.jpg",
+      "description": "Butter Chicken, or Murgh Makhani, is a popular Indian dish featuring tender chicken pieces in a rich and creamy tomato sauce. It's a perfect blend of spices and flavors, best enjoyed with naan or rice.",
+      "ingredients": [
+        { "NAME": "Chicken thighs", "AMOUNT": "1 kg, boneless" },
+        { "NAME": "Yogurt", "AMOUNT": "1 cup" },
+        { "NAME": "Lemon juice", "AMOUNT": "2 tbsp" },
+        { "NAME": "Garam masala", "AMOUNT": "2 tsp" },
+        { "NAME": "Cumin", "AMOUNT": "2 tsp" },
+        { "NAME": "Coriander", "AMOUNT": "2 tsp" },
+        { "NAME": "Turmeric", "AMOUNT": "1 tsp" },
+        { "NAME": "Butter", "AMOUNT": "100g" },
+        { "NAME": "Onions", "AMOUNT": "2, finely chopped" },
+        { "NAME": "Garlic", "AMOUNT": "4 cloves, minced" },
+        { "NAME": "Ginger", "AMOUNT": "1 tbsp, grated" },
+        { "NAME": "Tomato puree", "AMOUNT": "400g" },
+        { "NAME": "Heavy cream", "AMOUNT": "1 cup" },
+        { "NAME": "Salt", "AMOUNT": "to taste" },
+        { "NAME": "Cilantro", "AMOUNT": "for garnish" }
+      ],
+      "preparationSteps": [
+        "In a large bowl, mix yogurt, lemon juice, garam masala, cumin, coriander, and turmeric. Add chicken pieces and marinate for at least 1 hour.",
+        "In a large skillet, melt the butter over medium heat. Add the onions and cook until golden brown.",
+        "Add the garlic and ginger, and cook for another minute.",
+        "Stir in the tomato puree and cook for 10 minutes until the sauce thickens.",
+        "Add the marinated chicken and cook until the chicken is done, about 15-20 minutes.",
+        "Stir in the heavy cream and simmer for another 5 minutes.",
+        "Season with salt to taste.",
+        "Garnish with fresh cilantro and serve with naan or rice."
+      ],
+      "published": "Apr 22",
+      "likes": 95,
+      "comments": 40
+    },
+    {
+      "id": 9,
+      "title": "Mexican Tacos",
+      "picture_url": "https://www.dinneratthezoo.com/wp-content/uploads/2019/08/ground-beef-tacos-5.jpg",
+      "description": "Mexican Tacos are a vibrant and flavorful dish consisting of seasoned meat, fresh vegetables, and various toppings, all wrapped in soft or crispy tortillas. They are versatile and can be customized with your favorite ingredients.",
+      "ingredients": [
+        { "NAME": "Ground beef", "AMOUNT": "500g" },
+        { "NAME": "Taco seasoning", "AMOUNT": "1 packet" },
+        { "NAME": "Water", "AMOUNT": "1/2 cup" },
+        { "NAME": "Tortillas", "AMOUNT": "12" },
+        { "NAME": "Lettuce", "AMOUNT": "1 cup, shredded" },
+        { "NAME": "Tomatoes", "AMOUNT": "2, diced" },
+        { "NAME": "Cheddar cheese", "AMOUNT": "1 cup, shredded" },
+        { "NAME": "Sour cream", "AMOUNT": "1/2 cup" },
+        { "NAME": "Salsa", "AMOUNT": "1/2 cup" },
+        { "NAME": "Avocado", "AMOUNT": "1, sliced" }
+      ],
+      "preparationSteps": [
+        "In a large skillet, cook the ground beef over medium heat until browned. Drain excess fat.",
+        "Add the taco seasoning and water to the beef. Simmer for 5 minutes until the sauce thickens.",
+        "Warm the tortillas in a dry skillet or in the microwave.",
+        "Assemble the tacos by placing a spoonful of the seasoned beef in each tortilla.",
+        "Top with lettuce, tomatoes, cheese, sour cream, salsa, and avocado slices.",
+        "Serve immediately."
+      ],
+      "published": "Jun 15",
+      "likes": 110,
+      "comments": 55
+    },
+    {
+      "id": 10,
+      "title": "Greek Moussaka",
+      "picture_url": "https://www.budgetbytes.com/wp-content/uploads/2020/02/Moussaka-plate.jpg",
+      "description": "Greek Moussaka is a hearty casserole made with layers of eggplant, spiced meat, and creamy béchamel sauce. It's a comforting and flavorful dish, perfect for family dinners.",
+      "ingredients": [
+        { "NAME": "Eggplants", "AMOUNT": "2 large, sliced" },
+        { "NAME": "Olive oil", "AMOUNT": "for frying" },
+        { "NAME": "Ground lamb", "AMOUNT": "500g" },
+        { "NAME": "Onion", "AMOUNT": "1, chopped" },
+        { "NAME": "Garlic", "AMOUNT": "3 cloves, minced" },
+        { "NAME": "Tomato paste", "AMOUNT": "2 tbsp" },
+        { "NAME": "Red wine", "AMOUNT": "1/2 cup" },
+        { "NAME": "Cinnamon", "AMOUNT": "1/2 tsp" },
+        { "NAME": "Allspice", "AMOUNT": "1/4 tsp" },
+        { "NAME": "Salt", "AMOUNT": "to taste" },
+        { "NAME": "Pepper", "AMOUNT": "to taste" },
+        { "NAME": "Béchamel sauce", "AMOUNT": "2 cups" },
+        { "NAME": "Grated Parmesan", "AMOUNT": "1/2 cup" }
+      ],
+      "preparationSteps": [
+        "Preheat the oven to 180°C (356°F).",
+        "Salt the eggplant slices and let them sit for 30 minutes to draw out moisture. Rinse and pat dry.",
+        "Fry the eggplant slices in olive oil until golden brown. Set aside.",
+        "In a large skillet, cook the ground lamb with the chopped onion and garlic until the meat is browned.",
+        "Add the tomato paste, red wine, cinnamon, allspice, salt, and pepper. Simmer for 20 minutes.",
+        "In a baking dish, layer half of the eggplant slices, then the meat mixture, and top with the remaining eggplant slices.",
+        "Pour the béchamel sauce over the top and sprinkle with grated Parmesan cheese.",
+        "Bake for 45 minutes, until the top is golden brown and bubbly.",
+        "Let the moussaka cool for 10 minutes before serving."
+      ],
+      "published": "Jul 22",
+      "likes": 134,
+      "comments": 23
     }
   ]
 }
